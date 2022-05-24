@@ -1,0 +1,128 @@
+* {
+    font-family: "DM sans";
+    background-image: url(C:\Users\hicha\OneDrive\Bureau\FORMATION\P7\P7_roldan_hicham\frontend\public\imgs\logo\logo1.png);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login_img {
+    width: 200px;
+    height: 200px;
+    border-top: 0;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  padding: 1rem 0.5rem;
+}
+
+.Signup_box{
+    width: 100%;
+    max-width: 420px;
+    min-height: 400px;
+    margin: auto;
+    padding: 1rem;
+    background-color: rgba(0,0,0,0.4);
+    color: salmon;
+}
+
+.Signup_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 4;
+    padding-bottom: 1rem;
+}
+
+.connect_link, .connect_link:visited {
+    color: #fff;
+}
+
+.Signup_title {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.Signup_label {
+    margin-top: 50px;
+    margin: auto;
+    padding-bottom: 0px;
+}
+
+.Signup_input {
+    margin-top: 30px;
+}
+
+
+input[type="text"],
+input[type="password"],
+button,
+textarea {
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+}
+
+
+.Signup_button {
+  padding: 0.5rem;
+  background: salmon;
+  color: black;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.instructions {
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+    background: #000;
+    color: #fff;
+    padding: 0.25rem;
+    position: relative;
+    bottom: -10px;
+}
+
+.instructions > svg {
+    margin-right: 0.25rem;
+}
+
+.offscreen {
+    position: absolute;
+    left: -9999px;
+}
+
+.hide {
+    display: none;
+}
+
+.valid {
+    color: limegreen;
+    margin-left: 0.25rem;
+}
+
+.invalid {
+    color: red;
+    margin-left: 0.25rem;
+}
+
+.errmsg {
+    background-color: lightpink;
+    color: firebrick;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.line {
+    display: inline-block;
+}
