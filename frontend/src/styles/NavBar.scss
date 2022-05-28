@@ -17,8 +17,12 @@
     display: flex;
     align-items: center;
     padding: 15px 25px;
-    background: #fafafa;
+    background: #03117A;
     box-shadow: inset 0px -1px 0px #c5c5c6;
+}
+
+.NavBar a {
+    color: salmon;
 }
 
 .hamburger {
@@ -30,7 +34,6 @@
     font-size: 16px;
     font-weight: 500;
     text-decoration: none;
-    color: #41414141;
     display: inline-block;
     position: relative;
 }
@@ -64,6 +67,7 @@
     border-radius: 5px;
     cursor: pointer;
     border: none;
+    background: #92c3eeb7;
 }
 
 .sign-btns button:nth-child(2) {
@@ -101,7 +105,7 @@
         cursor: pointer;
         border: none;
         display: flex;
-        background: #fafafa;
+        color: salmon;
         align-items: center;
         position: relative;
     }
@@ -110,7 +114,7 @@
         display: block;
         width: 100%;
         height: 2px;
-        background: #333;
+        background: salmon;
         position: absolute;
         pointer-events: none;
         transition: opacity 0.3s 0.15s ease-out;

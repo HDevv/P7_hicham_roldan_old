@@ -3,11 +3,7 @@ import "../../styles/NavBar.scss";
 import React from "react";
 
 const NavBar = () => {
-
   function open() {
-    
-    console.log('coucou');
-    
     const hamburgerToggler = document.querySelector(".hamburger");
     const navLinksContainer = document.querySelector(".navlinks-container");
 
@@ -21,18 +17,16 @@ const NavBar = () => {
       hamburgerToggler.setAttribute("aria-expanded", ariaToggle);
 
       navLinksContainer.classList.toggle("open");
-
-      
     };
     hamburgerToggler.addEventListener("click", toggleNav);
-    
   }
 
   return (
     <div>
       <nav className="NavBar">
         <div className="main-navlinks">
-          <button onClick={() => open()}
+          <button
+            onClick={() => open()}
             className="hamburger"
             type="button"
             aria-label="Toggle navigation"
@@ -62,13 +56,17 @@ const NavBar = () => {
           <a href="/login" className="user-toggler" aria-label="Sign in page">
             <img
               className="logo2"
-              src="public/imgs/logo/logo-black2.png"
+              src="./imgs/logo/logo-black2.png"
               alt="Groupomania"
             />
           </a>
           <div className="sign-btns">
-            <button type="button">Sign In</button>
-            <button type="button">Sign Up</button>
+            <a href="/login">
+            <button type="button">Connexion</button>
+            </a>
+            <a href="/signup">
+            <button type="button">Inscription</button>
+            </a>
           </div>
         </div>
       </nav>
