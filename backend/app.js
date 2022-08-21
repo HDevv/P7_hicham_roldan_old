@@ -7,9 +7,9 @@ const app = express();
 //on importe les routes Sauces-----------------------------------------------------------------------------------------------------
 //const saucesRoutes = require('./Routes/sauces');---------------------------------------------------------------------------------
 
-const userRoutes = require('./apiRouter');
+const userRoutes = require('./apiRouter')();
 
-// importation pour accéder au PATH de notre serveur
+// importation pour accéder au PATH du serveur
 const path = require('path'); 
 
 //la méthode app.use() permet d'attribuer un middleware à une route spécifique 
@@ -31,7 +31,6 @@ app.use('/images', express.static(path.join(__dirname, 'images')));
 //app.use('/api/sauces', saucesRoutes);-----------------------------------------------------------------------------
 
 
-console.log('coucou');
 app.use('/api', userRoutes);
 
 

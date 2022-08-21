@@ -1,7 +1,7 @@
 // Imports
-var models   = require('../models');
-var asyncLib = require('async');
-var jwtUtils = require('../middleware/auth');
+const models   = require('../models');
+const asyncLib = require('async');
+const jwtUtils = require('../middleware/auth');
 
 // Constants
 const TITLE_LIMIT   = 2;

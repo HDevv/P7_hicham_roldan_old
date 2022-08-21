@@ -55,7 +55,7 @@ const NavBar = () => {
         <div className="nav-auth">
           <a href="/login" className="user-toggler" aria-label="Sign in page">
             <img
-              className="logo2"
+              className="logo_nav"
               src="./imgs/logo/logo-black2.png"
               alt="Groupomania"
             />

@@ -1,6 +1,7 @@
 import { useRef, useState, useEffect, useContext } from 'react';
 import AuthContext from '../context/AuthProvider';
-import '../styles/Login.scss'            
+import '../styles/Login.scss'       
+import Signup from './Signup';     
 
 const Login = () => {
     const { setAuth } = useContext(AuthContext);
@@ -98,7 +99,7 @@ const Login = () => {
                         Pas de compte ?<br />
                         <span className="line">
                             {/*put router link here*/}
-                            <a className="connect_link" href="Home.js">Inscrivez-vous</a>
+                            <a className="connect_link" href="/Signup">Inscrivez-vous</a>
                         </span>
                     </p>
                 </section>

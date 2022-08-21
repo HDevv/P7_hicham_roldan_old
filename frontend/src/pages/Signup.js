@@ -171,7 +171,7 @@ const Signup = () => {
                         />
                         <p id="confirmnote" className={matchFocus && !validMatch ? "instructions" : "offscreen"}>
                             <FontAwesomeIcon icon={faInfoCircle} />
-                            Must match the first password input field.
+                            Les mots de passe doivent être similaires
                         </p>
 
                         <button className="Signup_button" disabled={!validName || !validPwd || !validMatch ? true : false}
@@ -180,8 +180,8 @@ const Signup = () => {
                     <p>
                         Déjà inscrit ?<br />
                         <span className="line">
-                            {'apiRouter.js'}
-                            <a className="connect_link" href="Login.js">Connectez-vous</a>
+                            {''}
+                            <a className="connect_link" href="/Login">Connectez-vous</a>
                         </span>
                     </p>
                 </section>

@@ -6,10 +6,11 @@
 .groupo_icon {
     width: 30px;
 }
-.logo2 {
+.logo_nav {
     width: 100px;
     display: flex;
     align-items: center;  
+    justify-content: center;
 }
 .NavBar {
     position: fixed;
@@ -47,7 +48,7 @@
     height: 1px;
     transform: scale(0);
     transform-origin: left;
-    background: #333;
+    background: salmon;
     transition: transform 0.3s ease-out;
 }
 
